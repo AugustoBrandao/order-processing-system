@@ -4,16 +4,16 @@
   "files": [],
   "references": [
     {
-      "path": "./apps/api-gateway-e2e"
-    },
-    {
       "path": "./apps/api-gateway"
     },
     {
-      "path": "./apps/order-service-e2e"
+      "path": "./apps/order-service"
     },
     {
-      "path": "./apps/order-service"
+      "path": "./apps/payment-service"
+    },
+    {
+      "path": "./apps/notification-service"
     }
   ]
 }
