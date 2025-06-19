@@ -1,0 +1,10 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - '5672:5672' # Protocolo AMQP do RabbitMQ - envio e recebimento de mensagens
+      - '15672:15672' # Usar o Painei de Gerenciamento de Interface do Usuário da Web para o RabbitMQ
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest

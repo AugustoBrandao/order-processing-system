@@ -1,5 +1,5 @@
 {
-  "name": "@order-processing-system/order-processing-system",
+  "name": "@order-processing-system/api-gateway",
   "version": "0.0.1",
   "private": true,
   "nx": {
@@ -28,23 +28,17 @@
           "build"
         ],
         "options": {
-          "buildTarget": "@order-processing-system/order-processing-system:build",
+          "buildTarget": "@order-processing-system/api-gateway:build",
           "runBuildTargetDependencies": false
         },
         "configurations": {
           "development": {
-            "buildTarget": "@order-processing-system/order-processing-system:build:development"
+            "buildTarget": "@order-processing-system/api-gateway:build:development"
           },
           "production": {
-            "buildTarget": "@order-processing-system/order-processing-system:build:production"
+            "buildTarget": "@order-processing-system/api-gateway:build:production"
           }
         }
-      },
-      "docker-build": {
-        "dependsOn": [
-          "build"
-        ],
-        "command": "docker build -f apps/order-processing-system/Dockerfile . -t order-processing-system-order-processing-system"
       }
     }
   }
